@@ -16,6 +16,7 @@ def test_search_product_price():
                              " AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6"}
 
     response = requests.get(url=test_data['api_search_url'].format(product=test_data['product']), headers=headers)
+    assert response.status_code == 200
     response_data = response.json()['data']
     assert isinstance(response_data, dict)
     assert str(response_data['goods'][0]['price_pcs']) == test_data['product_price_USD']
