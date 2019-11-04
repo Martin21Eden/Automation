@@ -20,7 +20,12 @@ class ProductPage(BasePage, Header):
     """
     The class describes page of product
     """
-    PRODUCT_TITTLE = TextElement(_product_locators.TITTLE_PRODUCT)
+    PRODUCT_TITLE = TextElement(_product_locators.TITLE_PRODUCT)
+
+    @property
+    def product_title(self):
+        self.wait_for_page_to_open()
+        return self.PRODUCT_TITLE.text
 
     def is_opened(self):
-        return self.PRODUCT_TITTLE.is_displayed()
+        return self.PRODUCT_TITLE.is_displayed()

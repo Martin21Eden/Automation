@@ -7,4 +7,4 @@ class HeaderLocators:
 
 
 class ProductLocators:
-    TITTLE_PRODUCT = (By.CSS_SELECTOR, 'body h1')
+    TITLE_PRODUCT = (By.CSS_SELECTOR, 'body h1')

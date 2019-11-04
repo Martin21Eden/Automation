@@ -1,1 +1,1 @@
-from .flows import ProductPageFlow
+from .page import ProductPage
