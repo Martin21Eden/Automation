@@ -1,0 +1,11 @@
+pytest==6.2.5
+pytest-xdist==2.5.0
+pytest-rerunfailures==10.2
+requests~=2.22.0
+marshmallow==3.14.1
+PyHamcrest==2.0.3
+PyYAML~=5.3.1
+allure-pytest==2.9.45
+filelock==3.7.0
+dynaconf==3.1.9
+openpyxl==3.0.10

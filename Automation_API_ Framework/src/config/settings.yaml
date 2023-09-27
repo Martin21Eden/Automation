@@ -1,0 +1,9 @@
+dev:
+  host:
+    service: 'http://service-dev.com'
+    site: 'https://site-dev.com'
+
+prod:
+  host:
+    service: 'http://service.com'
+    site: 'https://site.com'

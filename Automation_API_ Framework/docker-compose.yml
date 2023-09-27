@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  qa:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: "pytest --env=dev"
+    volumes:
+      - ./src:/home/httpd/src
